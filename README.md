@@ -11,6 +11,7 @@
  - [wasmtime dotnet](https://github.com/bytecodealliance/wasmtime-dotnet)
  - [WasmerSharp](https://github.com/migueldeicaza/WasmerSharp)
  - [Extism Dotnet Sdk](https://github.com/extism/dotnet-sdk)
+ - [Extism Chicory Sdk (experimental)](https://github.com/extism/chicory-sdk) (built at [commit 152cf2ead89a2e5d5d3c772bb926a478707faf56](https://github.com/extism/chicory-sdk/commit/152cf2ead89a2e5d5d3c772bb926a478707faf56))
 
 # wello-wasm 
  This is the rust project being used to make the wasm file for testing.

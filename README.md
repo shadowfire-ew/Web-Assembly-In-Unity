@@ -15,5 +15,6 @@
 
 # wello-wasm 
  This is the rust project being used to make the wasm file for testing.
- You can build it using `wasm-pack build` (if you have your rust configured to build wasm. see [this documentation](https://rustwasm.github.io/docs/book/game-of-life/setup.html) for set up instructions).
- When building updates to this code, copy `pkg/wello_wasm_bg.wasm` to the resources folder and change the file extension to `.txt` 
+ If you have not already, use `rustup target add wasm32-unknown-unknown` to add the basic webassembly target.
+ You can then build using `cargo build --target wasm32-unknown-unknown` to build the web assembly file.
+ Thes resulting file can then be imported into the unity project.

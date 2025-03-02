@@ -2,10 +2,7 @@
 name = "wello-wasm"
 version = "0.1.0"
 edition = "2021"
-description = "A sample project with wasm-pack"
+description = "A sample project for wasm"
 
 [lib]
 crate-type = ["cdylib"]
-
-[dependencies]
-wasm-bindgen = "0.2"

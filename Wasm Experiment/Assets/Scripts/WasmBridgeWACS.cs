@@ -23,7 +23,7 @@ public class WasmBridgeWACS : MonoBehaviour
         var stream = new MemoryStream(bytes);
         var module = BinaryModuleParser.ParseWasm(stream);
         Debug.Log("module parsed");
-        var modInst = runtime.InstantiateModule(module);
+        var modInst = runtime.InstantiateModule(module, new RuntimeOptions { SkipModuleValidation = true});
         Debug.Log("module instantiated");
         runtime.RegisterModule("wello", modInst);
         Debug.Log("module registered");

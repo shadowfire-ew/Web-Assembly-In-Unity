@@ -42,7 +42,7 @@ public class WasmBridgeWasmtime : MonoBehaviour
         {
             // for some reason need to pass an integer for the no parameter function
             Debug.Log("I");
-            var result = get_something.Invoke(0);
+            var result = get_something.Invoke();
             if (null == result)
             {
                 Debug.Log("function did not return any value");

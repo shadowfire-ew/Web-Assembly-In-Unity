@@ -6,15 +6,14 @@ using UnityEngine;
 
 public class WasmBridgeUtility
 {
-    static byte[] cache = null;
+    static WasmAsset cache = null;
     public static byte[] GetFileBytes()
     {
         // not super nescessary, as this is sandboxed
         if (cache == null)
         {
-            TextAsset data = (TextAsset)Resources.Load("wello_wasm_bg");
-            cache = data.bytes;
+            cache = Resources.Load<WasmAsset>("wello_wasm");
         }
-        return cache;
+        return cache.data;
     }
 }
